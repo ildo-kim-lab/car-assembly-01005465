@@ -240,7 +240,7 @@ def main():
             elif ans == 2:
                 print("Test...")
                 delay(1500)
-                from test_assembly import test_produced_car
+                from tests.test_assembly import test_produced_car
                 test_produced_car()
                 delay(2000)
 
