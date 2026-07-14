@@ -1,12 +1,6 @@
 from assembly import SEDAN, SUV, TRUCK, GM, TOYOTA, WIA, MANDO, CONTINENTAL, BOSCH_B, BOSCH_S, MOBIS
-import assembly as _assembly
 
-def test_produced_car():
-    q0 = _assembly.q0
-    q1 = _assembly.q1
-    q2 = _assembly.q2
-    q3 = _assembly.q3
-
+def test_produced_car(q0, q1, q2, q3):
     if q0 == SEDAN and q2 == CONTINENTAL:
         print("FAIL\nSedan에는 Continental제동장치 사용 불가")
     elif q0 == SUV and q1 == TOYOTA:
@@ -19,3 +13,5 @@ def test_produced_car():
         print("FAIL\nBosch제동장치에는 Bosch조향장치 이외 사용 불가")
     else:
         print("PASS")
+
+test_produced_car.__test__ = False

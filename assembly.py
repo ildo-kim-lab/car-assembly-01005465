@@ -241,7 +241,7 @@ def main():
                 print("Test...")
                 delay(1500)
                 from tests.test_assembly import test_produced_car
-                test_produced_car()
+                test_produced_car(q0, q1, q2, q3)
                 delay(2000)
 
 if __name__ == "__main__":
